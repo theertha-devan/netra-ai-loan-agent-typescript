@@ -146,7 +146,7 @@ async function traceConversation(
   threadId: string,
   messages: BaseMessage[],
 ) {
-  const span = Netra.startSpan("Generation Pipeline", undefined, undefined, SpanType.GENERATION);
+  const span = Netra.startSpan("Generation Pipeline",  { asType: SpanType.GENERATION });
   span.start();
 
   try {
@@ -178,9 +178,7 @@ async function traceConversation(
   
             const responseSpan = Netra.startSpan(
               "Agent Response",
-              undefined,
-              undefined,
-              SpanType.GENERATION,
+              {asType: SpanType.GENERATION},
             );
             responseSpan.start();
             try {
@@ -229,9 +227,7 @@ async function traceConversation(
   
             const toolSpan = Netra.startSpan(
               tc.name,
-              undefined,
-              undefined,
-              SpanType.TOOL,
+              {asType: SpanType.TOOL},
             );
             toolSpan.start();
             try {

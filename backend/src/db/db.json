@@ -1,0 +1,169 @@
+{
+    "products": [
+        {
+            "product_id": "FLEXI",
+            "name": "FlexiLoan",
+            "interest_rate_annual_pct": 11.5,
+            "min_credit_score": 650,
+            "available_tenures_months": [
+                12,
+                24,
+                36,
+                48,
+                60
+            ],
+            "processing_fee_pct": 1.5,
+            "max_amount": 500000
+        },
+        {
+            "product_id": "PRIME",
+            "name": "PrimeLoan",
+            "interest_rate_annual_pct": 10.2,
+            "min_credit_score": 750,
+            "available_tenures_months": [
+                24,
+                36,
+                48
+            ],
+            "processing_fee_pct": 1.0,
+            "max_amount": 500000
+        },
+        {
+            "product_id": "VALUE",
+            "name": "ValueLoan",
+            "interest_rate_annual_pct": 12.8,
+            "min_credit_score": 600,
+            "available_tenures_months": [
+                12,
+                24,
+                36
+            ],
+            "processing_fee_pct": 2.0,
+            "max_amount": 500000
+        }
+    ],
+    "customers": [
+        {
+            "customer_id": "CUST-001",
+            "verified": true,
+            "full_name": "Priya Sharma",
+            "kyc_status": "complete",
+            "risk_flag": "none",
+            "pan": "ABCDE1234G",
+            "aadhaar": "234567891234",
+            "phone": "9876543210",
+            "credit_report": {
+                "credit_score": 780,
+                "active_loans": [],
+                "defaults_last_3_years": 0,
+                "credit_utilization_pct": 22
+            },
+            "financial_profile": {
+                "monthly_income": 95000,
+                "employer": "Infosys Ltd",
+                "employment_type": "salaried",
+                "employment_tenure_months": 48,
+                "existing_monthly_emi": 0,
+                "average_bank_balance_6m": 285000
+            },
+            "eligibility": {
+                "eligible": true,
+                "max_approved_amount": 500000,
+                "requested_amount": 500000,
+                "debt_to_income_ratio": 0.09,
+                "rejection_reasons": [],
+                "policy_version": "v3.2.1"
+            }
+        },
+        {
+            "verified": true,
+            "customer_id": "CUST-002",
+            "full_name": "Rahul Mehta",
+            "kyc_status": "complete",
+            "risk_flag": "none",
+            "pan": "ABCPM5678Q",
+            "aadhaar": "567890123456",
+            "phone": "9823456789",
+            "credit_report": {
+                "credit_score": 724,
+                "active_loans": [
+                    {
+                        "type": "car_loan",
+                        "outstanding": 380000,
+                        "monthly_emi": 12000
+                    }
+                ],
+                "defaults_last_3_years": 0,
+                "credit_utilization_pct": 34
+            },
+            "financial_profile": {
+                "monthly_income": 85000,
+                "employer": "TCS",
+                "employment_type": "salaried",
+                "employment_tenure_months": 36,
+                "existing_monthly_emi": 12000,
+                "average_bank_balance_6m": 145000
+            }
+        },
+        {
+            "verified": true,
+            "customer_id": "CUST-003",
+            "full_name": "Arjun Paul",
+            "kyc_status": "complete",
+            "risk_flag": "medium",
+            "pan": "ABCPP9012X",
+            "aadhaar": "890123456789",
+            "phone": "9712345678",
+            "credit_report": {
+                "credit_score": 580,
+                "active_loans": [
+                    {
+                        "type": "personal_loan",
+                        "outstanding": 220000,
+                        "monthly_emi": 15000
+                    },
+                    {
+                        "type": "credit_card_debt",
+                        "outstanding": 95000,
+                        "monthly_emi": 13000
+                    }
+                ],
+                "defaults_last_3_years": 1,
+                "credit_utilization_pct": 78
+            },
+            "financial_profile": {
+                "monthly_income": 65000,
+                "employer": "Self — Reddy Consulting",
+                "employment_type": "self_employed",
+                "employment_tenure_months": 18,
+                "existing_monthly_emi": 28000,
+                "average_bank_balance_6m": 42000
+            }
+        },
+        {
+            "verified": true,
+            "customer_id": "CUST-004",
+            "full_name": "Meera Iyer",
+            "kyc_status": "complete",
+            "risk_flag": "none",
+            "pan": "ABCPI7890M",
+            "aadhaar": "890123456780",
+            "phone": "9712345670",
+            "credit_report": {
+                "credit_score": 710,
+                "active_loans": [
+                ],
+                "defaults_last_3_years": 0,
+                "credit_utilization_pct": 29
+            },
+            "financial_profile": {
+                "monthly_income": 55000,
+                "employer": "Wipro",
+                "employment_type": "salaried",
+                "employment_tenure_months": 14,
+                "existing_monthly_emi": 0,
+                "average_bank_balance_6m": 98000
+            }
+        }
+    ]
+}

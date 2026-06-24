@@ -1,0 +1,26 @@
+{
+  "name": "backend-ts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "simulation": "tsx src/scripts/run-simulation.ts",
+    "evaluation": "tsx src/scripts/run-evaluation.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.9",
+    "@langchain/core": "^1.1.29",
+    "@langchain/openai": "^1.2.11",
+    "hono": "^4.12.3",
+    "langchain": "^1.2.28",
+    "netra-sdk": "^1.2.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
+}

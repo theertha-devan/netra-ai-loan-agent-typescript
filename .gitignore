@@ -1,0 +1,133 @@
+# =========================
+# Node / NPM
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+netra-sdk-js/
+netra-sdk-js
+backend/netra-sdk-js
+
+# Package manager lock files (optional)
+# Uncomment if you don't want to commit them
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
+
+
+# =========================
+# TypeScript build
+# =========================
+dist/
+build/
+out/
+
+*.tsbuildinfo
+
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+
+# =========================
+# Coverage / Testing
+# =========================
+coverage/
+.nyc_output/
+
+
+# =========================
+# Runtime files
+# =========================
+*.pid
+*.seed
+*.pid.lock
+
+
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+
+*.swp
+*.swo
+
+
+# =========================
+# Cache
+# =========================
+.cache/
+.parcel-cache/
+.eslintcache
+
+
+# =========================
+# Docker
+# =========================
+*.pid
+
+
+# =========================
+# Uploads / User files
+# =========================
+uploads/
+storage/
+tmp/
+temp/
+
+
+# =========================
+# Agent specific
+# =========================
+# Generated prompts/responses
+.agent/
+.agent-cache/
+
+# Local traces
+traces/
+
+# Local reports
+reports/
+
+
+# =========================
+# Frontend (if Next.js/React)
+# =========================
+.next/
+.vercel/
+
+# =========================
+# Backend runtime
+# =========================
+*.sqlite
+*.db
+
+
+# =========================
+# Secrets / Credentials
+# =========================
+*.pem
+*.key
+credentials.json
+service-account.json
